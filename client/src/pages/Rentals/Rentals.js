@@ -1,6 +1,8 @@
 import React from "react";
-import CcCalendly from "../utils/CcCalendly.js";
-import BallCalendly from "../utils/BallCalendly.js";
+import CcCalendly from "../../utils/CcCalendly.js";
+import BallCalendly from "../../utils/BallCalendly.js";
+import "./Rentals.css";
+
 
 const Rentals = () => {
   return (

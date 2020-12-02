@@ -1,0 +1,32 @@
+.carouselSize {
+    width: 600px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-color: rgb(45,49,66);
+    border-style: solid;
+    border-width: 40px;
+
+
+
+    
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+};
+
+.masterContainer {
+    width: 90px;
+}
+
+    @media only screen and (max-width: 600px) {
+        .carouselSize {
+            width: 200px;
+            margin: auto;
+            border-width: 10px;
+        }
+        
+    }
