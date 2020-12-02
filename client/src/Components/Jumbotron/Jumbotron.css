@@ -1,0 +1,42 @@
+.jumbotron {
+    text-align: center !important;
+    background-image: url("./skyview.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: left center;
+    color: rgb(45,49,66);
+    margin: 50px;
+}
+
+hr {
+    border-top: 3px solid #fdd835 !important;
+    width: 900px;
+}
+
+p {
+    font-size: 35px !important;
+}
+
+.display-4{
+    font-weight: bold;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .display-4 {
+        font-size: 45px;
+        /* text-align: right; */
+    }
+    p {
+        font-size: 35px;
+        /* text-align: right; */
+    }
+    hr {
+        width: 200px;
+    }
+    .jumbotron {
+        margin: 25px;
+    }
+    
+}
