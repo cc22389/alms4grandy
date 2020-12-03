@@ -17,10 +17,7 @@ function Footer() {
                 </div>
                 <div className="col footer">
                     <h3>Media</h3>
-                    <h5>
-                        <a href="https://www.facebook.com/Grandy-Community-Center-986959121394278/" target="_blank">Facebook</a>
-                        </h5>
-                    <h5>Instagram</h5>
+                        <a class="fa fa-facebook" href="https://www.facebook.com/Grandy-Community-Center-986959121394278/" target="_blank"></a>
                 </div>
                 <div className="col footer">
                     <h3>Get Involved</h3>

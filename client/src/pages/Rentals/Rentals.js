@@ -6,7 +6,7 @@ import "./Rentals.css";
 
 const Rentals = () => {
   return (
-    <div>
+    <div className="container">
       <h2>Rentals</h2>
       <br></br>
       <div className="rowRental">
