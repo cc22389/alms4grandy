@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../../components/Carousel/Carousel"
+import Carousel from "../../parts/Carousel/Carousel"
 import stateMap from "./map_of_grandy_mn.jpg";
 import "./Home.css";
 
