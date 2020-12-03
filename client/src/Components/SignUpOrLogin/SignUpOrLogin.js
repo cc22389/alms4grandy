@@ -39,9 +39,6 @@ class SignUpOrLogin extends Component {
                     </section>
                 ) : (
                         <section>
-                            <Link to="/">
-                                <span >home</span>
-                            </Link>
                             <Link to="/loginpage">
                                 <span >loginpage</span>
                             </Link>
