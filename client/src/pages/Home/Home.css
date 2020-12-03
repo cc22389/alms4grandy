@@ -25,6 +25,7 @@ h2 {
     .home {
         font-size: 15px !important;
         width: 100%;
+        margin: auto;
     }
     h2 {
         font-size: 25px;

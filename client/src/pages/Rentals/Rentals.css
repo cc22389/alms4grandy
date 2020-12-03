@@ -1,3 +1,13 @@
-h1 {
+h2 {
     text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(45,49,66);
+    display: block;
 }
+    @media only screen and (max-width: 500px) {
+        .rowRental {
+            flex-direction: column;
+
+        }
+    }
