@@ -28,6 +28,14 @@ h5:hover {
     color: #fdd835
 }
 
+.linkies {
+    color: white
+}
+
+.linkies:hover {
+    color: #fdd835
+}
+
 @media only screen and (max-width: 600px) {
     footer {
         height: 100%;;
