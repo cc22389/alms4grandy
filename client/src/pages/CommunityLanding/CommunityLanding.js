@@ -1,5 +1,5 @@
 import React from "react";
-import LoginRouter from '../../components/LoginRouter/LoginRouter'
+import LoginRouter from '../../Components/LoginRouter/LoginRouter'
 
 function CommunityLanding() {
     return (
