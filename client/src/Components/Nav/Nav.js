@@ -17,14 +17,14 @@ function Navbar() {
                 Rentals
             </Link>
             <Link
-                to="/community"
-                className={location.pathname === "/community" ? "nav-link" : "nav-link"}>
+                to="/communitylanding"
+                className={location.pathname === "/communitylanding" ? "nav-link" : "nav-link"}>
                 Community
             </Link>
             <Link
                 to="/lions"
                 className={location.pathname === "/lions" ? "nav-link" : "nav-link"}>
-                Grandy Lions
+                Lions
             </Link>
 
         </nav>
