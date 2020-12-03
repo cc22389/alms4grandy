@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Rentals from "./pages/Rentals/Rentals"
 import "./App.css";
-import Nav from "./components/Nav/Nav";
-import Jumbotron from "./components/Jumbotron/Jumbotron"
+import Nav from "./parts/Nav/Nav";
+import Jumbotron from "./parts/Jumbotron/Jumbotron"
 import Home from "./pages/Home/Home";
-import Footer from "./components/Footer/Footer";
+import Footer from "./parts/Footer/Footer";
 import CommunityLanding from "./pages/CommunityLanding/CommunityLanding";
 import LoginPage from "./pages/Login/LoginPage";
 import SignUpPage from "./pages/SignUp/SignUpPage";
