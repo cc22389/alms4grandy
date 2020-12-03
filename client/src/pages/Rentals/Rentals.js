@@ -7,11 +7,23 @@ import "./Rentals.css";
 const Rentals = () => {
   return (
     <div>
-      <h1>Rentals</h1>
-      <CcCalendly></CcCalendly>
-      <BallCalendly></BallCalendly>
+      <h2>Rentals</h2>
+      <br></br>
+      <div className="rowRental">
+        <div className="col calendar">
+          <CcCalendly></CcCalendly>
+        </div>
+        <div className="col calendar">
+          <BallCalendly></BallCalendly>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Rentals;
+
+
+
+
+
