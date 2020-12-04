@@ -4,21 +4,29 @@ mongoose.Promise = global.Promise
 
 //your local database url
 //27017 is the default mongoDB port
-const uri = 'mongodb://localhost:27017/alms4grandy' 
+// const uri = 'mongodb://localhost:27017/alms4grandy' 
 
-mongoose.connect(uri).then(
-    () => { 
-        /** ready to use. The `mongoose.connect()` promise resolves to undefined. */ 
-        console.log('Connected to Mongo');
+// mongoose.connect(uri).then(
+//     () => { 
+//         /** ready to use. The `mongoose.connect()` promise resolves to undefined. */ 
+//         console.log('Connected to Mongo');
         
-    },
-    err => {
-         /** handle initial connection error */ 
-         console.log('error connecting to Mongo: ')
-         console.log(err);
+//     },
+//     err => {
+//          /** handle initial connection error */ 
+//          console.log('error connecting to Mongo: ')
+//          console.log(err);
          
-        }
-  );
+//         }
+//   );
+console.log({ MONGODB_URI: process.env.MONGODB_URI });
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/alms4grandy', {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useCreateIndex: true,
+  useUnifiedTopology: true
+});
 
 
 module.exports = mongoose.connection
