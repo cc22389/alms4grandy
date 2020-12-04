@@ -9,7 +9,8 @@ const passport = require('./models/passport');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-const user = require('./routes/user')
+const user = require('./routes/routes')
+const post = require('./routes/routes')
 
 // MIDDLEWARE
 app.use(morgan('dev'))
@@ -37,6 +38,7 @@ app.use(passport.session()) // calls the deserializeUser
 
 // Routes
 app.use('/user', user)
+app.use('/post', post)
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {

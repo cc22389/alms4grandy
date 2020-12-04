@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import SignUpOrLogin from '../SignUpOrLogin/SignUpOrLogin'
+import NewPost from '../NewPost/NewPost'
 
 class LoginRouter extends Component {
   constructor() {
@@ -53,7 +54,8 @@ class LoginRouter extends Component {
             <SignUpOrLogin updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
             {/* greet user if logged in: */}
             {this.state.loggedIn &&
-              <p  style={{color: "rgb(45,49,66"}}>Hey, {this.state.username}!</p>
+              <p  style={{color: "rgb(45,49,66"}}>Hey, {this.state.username}!</p> &&
+              <NewPost/>
             }
         </div>
     </div>
