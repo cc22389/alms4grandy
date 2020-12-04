@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import SignUpOrLogin from '../SignUpOrLogin/SignUpOrLogin'
+<<<<<<< HEAD
 import "./LoginRouter.css";
+=======
+import NewPost from '../NewPost/NewPost'
+>>>>>>> 61d6686d177df6a753146cba9514b6beae0da05c
 
 class LoginRouter extends Component {
   constructor() {
@@ -50,6 +54,7 @@ class LoginRouter extends Component {
 
       <div className="card bg-light mx-auto" style={{ maxWidth: "25%", float: "center", margin: 0, float: "none" }}>
         <div className="card-body mx-auto">
+<<<<<<< HEAD
           <br></br>
           <i className='fas fa-user-alt' style={{ width: "100%", fontSize: "48px" }}></i>
           <br></br>
@@ -60,6 +65,15 @@ class LoginRouter extends Component {
           }
           <br></br>
           <SignUpOrLogin updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
+=======
+            <br></br>
+            <SignUpOrLogin updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
+            {/* greet user if logged in: */}
+            {this.state.loggedIn &&
+              <p  style={{color: "rgb(45,49,66"}}>Hey, {this.state.username}!</p> &&
+              <NewPost/>
+            }
+>>>>>>> 61d6686d177df6a753146cba9514b6beae0da05c
         </div>
       </div>
     );

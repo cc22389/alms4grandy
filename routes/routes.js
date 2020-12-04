@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const User = require('../models/user')
+const Post = require('../models/post')
 const passport = require('../models/passport')
 
 router.post('/', (req, res) => {
@@ -63,6 +64,19 @@ router.post('/logout', (req, res) => {
     } else {
         res.send({ msg: 'no user to log out' })
     }
+})
+
+router.post('/newpost', (req, res) => {
+    console.log('create post');
+    const { title, post } = req.body
+    const newPost = new Post({
+        title: title,
+        post: post
+    })
+    newPost.save((err, savedPost) => {
+        if (err) return res.json(err)
+        res.json(savedPost)
+    })
 })
 
 module.exports = router
