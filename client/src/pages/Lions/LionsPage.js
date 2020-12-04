@@ -10,7 +10,7 @@ function LionsPage() {
                     <div className="card bg-light mx-auto" style={{ margin: "auto", width: "80%" }}>
                         <div className="card-body">
                             <div>
-                                <img src={cubs} style={{ width: "25%" }} />
+                                <img src={cubs} style={{ width: "25%" }} alt="GrandyLions" />
                             </div>
                             <br></br>
                             <br></br>
@@ -28,7 +28,7 @@ function LionsPage() {
                     <div className="card bg-light mx-auto" style={{ margin: "auto", width: "80%" }}>
                         <div className="card-body" style={{ height: "auto" }}>
                             <div>
-                                <img src={lions} style={{ width: "30%" }} />
+                                <img src={lions} style={{ width: "30%" }} alt="InternationalLions" />
                             </div>
                             <br></br>
                             <br></br>
