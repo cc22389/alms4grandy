@@ -7,9 +7,6 @@ import yard from "./Images/yardView.png";
 import parking from "./Images/parkingView.png";
 import lions from "./Images/lionsView.png";
 import sign from "./Images/sign.png";
-// import community from "./Images/community.jpg";
-// import party from "./Images/birthdayParty.jpg";
-// import volunteer from "./Images/volunteer.jpg";
 import "./Carousel.css";
 
 function Carousel() {

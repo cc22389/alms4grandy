@@ -30,7 +30,9 @@ h5 {
 }
 
 h5:hover a:hover{
-    color: #fdd835
+    color: #fdd835;
+    text-decoration-line: none;
+
 }
 
 /* .linkies {
@@ -40,11 +42,11 @@ h5:hover a:hover{
 .linkies:hover {
     color: #fdd835
 } */
-.fa-facebook{
+/* .fa-facebook{
     background: #3B5998;
-}
+} */
 
-.fa:hover {
+.fab:hover {
     opacity: 0.7;
     color: white !important;
     text-decoration-line: none;

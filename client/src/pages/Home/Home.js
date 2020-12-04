@@ -23,7 +23,7 @@ function Home() {
                     <ul className="home">In October of 1991, the community center became a nonprofit organization</ul>
                     <ul className="home">In 2008 Bob Taylor, Nancy Taylor, and Donna Biggins donated the Grandy Ballfield to the community center. The lions helped rebuild the feild so that today's youth can have a place to play ball.</ul>
                     <ul className="home">August 2016 we added a new swing set for community use.</ul>
-                    <img className="state" src={stateMap} alt="state"/>
+                    <img className="state" src={stateMap} alt="state" />
                 </div>
             </div>
         </div>
@@ -31,3 +31,7 @@ function Home() {
 }
 
 export default Home;
+
+
+
+

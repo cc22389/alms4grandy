@@ -18,7 +18,7 @@ function Footer() {
                 <br></br>
                 <div className="col footer" style={{textAlign: "center"}}>
                     <h3>Media</h3>
-                    <a  class="fa fa-facebook" href="https://www.facebook.com/Grandy-Community-Center-986959121394278/" target="_blank"></a>
+                    <i  class="fab fa-facebook" style={{color: "white", width: "100%", fontSize: "36px"}} href="https://www.facebook.com/Grandy-Community-Center-986959121394278/" target="_blank"></i>
                 </div>
                 <br></br>
                 <div className="col footer">

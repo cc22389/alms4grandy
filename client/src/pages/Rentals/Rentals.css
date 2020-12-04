@@ -5,9 +5,31 @@ h2 {
     color: rgb(45,49,66);
     display: block;
 }
-    @media only screen and (max-width: 500px) {
-        .rowRental {
+    /* @media only screen and (max-width: 500px) {
+        .row {
             flex-direction: column;
 
         }
+    } */
+
+    /* @media only screen and (max-width: 900px) {
+        .picture, .CcCalendly {
+            display: block;
+            width: 100%
+        }
+
+    } */
+ 
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .rentals {
+      width: 50%;
     }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .rentals {
+      width: 100%;
+    }
+  }
