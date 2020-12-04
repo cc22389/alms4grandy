@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
+import { authorize } from 'passport'
+import "./Login.css";
 
 class Login extends Component {
     constructor() {
@@ -56,37 +58,38 @@ class Login extends Component {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
         } else {
             return (
-                <div>
-                    <h4>Login</h4>
-                    <form>
-                        <div>
-                            <label htmlFor="username">Username</label>
+                <div >
+                    <form >
+                        <div >
                             <input
+                                style={{fontSize: "60%", width: "60%"}}
                                 type="text"
                                 id="username"
                                 name="username"
-                                placeholder="Username"
+                                placeholder="Email or Username"
                                 value={this.state.username}
                                 onChange={this.handleChange}
                             />
                         </div>
-
+                        <br></br>
                         <div>
-                            <label htmlFor="password">Password: </label>
                             <input
-                                placeholder="password"
+                                style={{fontSize: "60%", width: "60%"}}
+                                placeholder="Password"
                                 type="password"
                                 name="password"
                                 value={this.state.password}
                                 onChange={this.handleChange}
                             />
                         </div>
-
+                        <br></br>
                         <div>
                             <button
-
                                 onClick={this.handleSubmit}
-                                type="submit">Login</button>
+                                type="submit"
+                                style={{background: "#fdd835", color: "rgb(45,49,66", border: "#fdd835", borderRadius: "4px", fontSize: "70%", width: "20%"}}
+                                ><strong>Login</strong>
+                            </button>
                         </div>
                     </form>
                 </div>

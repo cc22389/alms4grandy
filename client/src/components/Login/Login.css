@@ -1,0 +1,8 @@
+@media only screen and (max-width: 600px) {
+    button {
+        font-size: 10px !important;
+    }
+    input {
+        font-size: 10px !important;
+    }
+}

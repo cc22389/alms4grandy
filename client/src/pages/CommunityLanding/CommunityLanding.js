@@ -4,7 +4,7 @@ import LoginRouter from '../../components/LoginRouter/LoginRouter'
 function CommunityLanding() {
     return (
         <div>
-            <LoginRouter/>
+            <h3 style={{textAlign: "center"}}><LoginRouter/></h3>
         </div>
     )
 }

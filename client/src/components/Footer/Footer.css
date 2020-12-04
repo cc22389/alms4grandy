@@ -7,6 +7,7 @@ footer {
     height: auto;
     color: white;
     margin-top: 80px;
+    /* position: absolute; */
 }
 
 .footer {
@@ -46,15 +47,26 @@ h5:hover a:hover{
 .fa:hover {
     opacity: 0.7;
     color: white !important;
+    text-decoration-line: none;
   }
 
-  .fa {
+  /* .fa {
     padding: 20px;
     font-size: 20px;
-    width: 56px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     text-decoration: none;
+  } */
+
+  .fa {
+    padding: 12px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15%;
   }
 
   
@@ -70,16 +82,12 @@ h5:hover a:hover{
     .rowclass {
         flex-direction: column;
     }
-    h3, h5, .fa{
-        font-size: 10px;
+    h3, h5{
+        font-size: 15px;
         text-align: center;
     }
     h3 {
         font-weight: bold;
     }
-    .fa {
-        width: 20px;
-        height: 20px;
-        text-align: center;
-    }
+    
 }
