@@ -16,7 +16,7 @@ const Rentals = () => {
             <div className="card-body" >
               <div className="row" style={{verticalAlign: "middle"}}>
                 <div className="col rentals" style={{textAlign: "center", float: "left", width: "50%"}}>
-                  <img className="picture" src={party} style={{width: "100%",}}/>
+                  <img className="picture" src={party} style={{width: "100%",}} alt="party"/>
                 </div>
                 <div className="col rentals">
                   <CcCalendly className="CcCalendly" />
@@ -29,7 +29,7 @@ const Rentals = () => {
             <div className="card-body">
               <div className="row">
                 <div className="col" style={{textAlign: "center", float: "left", width: "50%"}}>
-                  <img className="picture" src={field} style={{width: "100%", margin: "auto"}}/>
+                  <img className="picture" src={field} style={{width: "100%", margin: "auto"}} alt="field"/>
                 </div>
                 <div className="col">
                   <BallCalendly />

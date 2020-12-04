@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
+//debug {authorize} to see if we need it below?
 import { authorize } from 'passport'
 import "./Login.css";
 

@@ -33,8 +33,3 @@ function Navbar() {
 
 export default Navbar;
 
-{/* <Link
-    to="/"
-    className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-    Home
-</Link> */}
