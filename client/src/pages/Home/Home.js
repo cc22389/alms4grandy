@@ -12,7 +12,7 @@ function Home() {
             <div className="row rowclass">
                 <div className="col">
                     <h2>About us</h2>
-                    <p className="home">Grandy Community Center has been around for 20+ years. It houses the Grandy Lions for their pancake breakfasts' and monthly meetings.</p>
+                    <ul className="home">Grandy Community Center has been around for 20+ years. It houses the Grandy Lions for their pancake breakfasts' and monthly meetings.</ul>
                     <Carousel />
                 </div>
                 <div className="col">

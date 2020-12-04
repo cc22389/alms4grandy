@@ -49,35 +49,39 @@ class SignUp extends Component {
 	render() {
 		return (
 			<div>
-				<h4>Sign up</h4>
 				<form >
 					<div>
-						<label htmlFor="username">Username</label>
 						<input
+							style={{fontSize: "60%"}}
 							type="text"
 							id="username"
 							name="username"
-							placeholder="Username"
+							placeholder="Email or Username"
 							value={this.state.username}
 							onChange={this.handleChange}
 						/>
 					</div>
+					<br></br>
 					<div>
-						<label>Password: </label>
-						<input
-							placeholder="password"
+						<input 
+							style={{fontSize: "60%"}}
+							placeholder="Password"
 							type="password"
 							name="password"
 							value={this.state.password}
 							onChange={this.handleChange}
 						/>
 					</div>
+					<br></br>
 					<div>
 						<button
-							className="btn btn-primary col-1 col-mr-auto"
+							// className="btn btn-primary col-1 col-mr-auto"
 							onClick={this.handleSubmit}
 							type="submit"
-						>Sign up</button>
+							style={{background: "#fdd835", color: "rgb(45,49,66", padding:"5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "70%"}}
+                            ><strong>Sign Up</strong>
+						</button>
+						
 					</div>
 				</form>
 			</div>

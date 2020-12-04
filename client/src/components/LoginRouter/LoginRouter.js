@@ -46,13 +46,17 @@ class LoginRouter extends Component {
 
   render() {
     return (
-        <div>
+        
+        <div className="card bg-light mx-auto" style={{ maxWidth: "25%", float: "center", margin: 0, float: "none" }}>
+        <div className="card-body mx-auto">
+            <br></br>
             <SignUpOrLogin updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
             {/* greet user if logged in: */}
             {this.state.loggedIn &&
-              <p>Hey, {this.state.username}!</p>
+              <p  style={{color: "rgb(45,49,66"}}>Hey, {this.state.username}!</p>
             }
         </div>
+    </div>
     );
   }
 }
