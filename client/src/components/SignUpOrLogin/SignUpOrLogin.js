@@ -52,12 +52,9 @@ class SignUpOrLogin extends Component {
                     
                         <section>
                             <Link to="/loginpage">
-                                <div style={{color: "rgb(45,49,66)", fontSize: "100%"}}>Account Login</div>
+                                <div style={{color: "rgb(45,49,66)", fontSize: "100%"}}>Administrator Login</div>
                             </Link>
                             <br></br>
-                            <Link to="/signuppage">
-                                <div style={{color: "rgb(45,49,66)", fontSize: "100%"}} >Create New Account</div>
-                            </Link>
                         </section>
                     )}
                     <br></br>
