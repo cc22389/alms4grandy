@@ -3,8 +3,7 @@ import CcCalendly from "../../utils/CcCalendly.js";
 import BallCalendly from "../../utils/BallCalendly.js";
 import "./Rentals.css";
 import party from "./birthdayParty.jpg";
-import field from "./ballField.jpg";
-
+import field from "./field.jpg";
 
 const Rentals = () => {
   return (

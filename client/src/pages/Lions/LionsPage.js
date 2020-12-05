@@ -5,8 +5,12 @@ import "./LionsPage.css";
 
 function LionsPage() {
     return (
+        <div>
+            <a href="https://www.lionsclubs.org/en" target="blank"><button>Learn More</button></a>
+            <a href="https://www.lionsclubs.org/en/join/membership-form" target="blank"><button>Join</button></a>
+            <a href="https://www.lionsclubs.org/en/donate" target="blank"><button>Donate</button></a>
             <div className="row rowclass">
-                <div className="col" style={{textAlign: "center", padding: "10px"}}>
+                <div className="col" style={{ textAlign: "center", padding: "10px" }}>
                     <div className="card bg-light mx-auto" style={{ margin: "auto", width: "80%" }}>
                         <div className="card-body">
                             <div>
@@ -24,7 +28,7 @@ function LionsPage() {
                         </div>
                     </div>
                 </div>
-                <div className="col" style={{textAlign: "center", padding: "10px"}}>
+                <div className="col" style={{ textAlign: "center", padding: "10px" }}>
                     <div className="card bg-light mx-auto" style={{ margin: "auto", width: "80%" }}>
                         <div className="card-body" style={{ height: "auto" }}>
                             <div>
@@ -43,6 +47,7 @@ function LionsPage() {
                     </div>
                 </div>
             </div>
+        </div>
     );
 }
 
