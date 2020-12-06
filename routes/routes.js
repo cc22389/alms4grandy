@@ -68,9 +68,10 @@ router.post('/logout', (req, res) => {
 
 router.post('/newpost', (req, res) => {
     console.log('create post');
-    const { title, post } = req.body
+    const { title, imageURL, post } = req.body
     const newPost = new Post({
         title: title,
+        imageURL: imageURL,
         post: post
     })
     newPost.save((err, savedPost) => {
@@ -83,6 +84,7 @@ router.put('/editpost/:id', (req, res) => {
     console.log('edit post');
     Post.findByIdAndUpdate(req.params.id, {
         title: req.body.title,
+        imageURL: req.body.imageURL,
         post: req.body.post
     },
         function (err, response) {

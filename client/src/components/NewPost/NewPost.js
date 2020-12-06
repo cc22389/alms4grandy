@@ -6,8 +6,8 @@ class NewPost extends Component {
 		super()
 		this.state = {
 			title: '',
-			post: '',
-
+			imageURL: '',
+			post: ''
 		}
 		this.handleSubmit = this.handleSubmit.bind(this)
 		this.handleChange = this.handleChange.bind(this)
@@ -19,12 +19,14 @@ class NewPost extends Component {
 	}
 	handleSubmit(event) {
 		console.log(this.state.title)
+		console.log(this.state.imageURL)
 		console.log(this.state.post)
 		event.preventDefault()
 
 		//request to server to add a new title/post
 		axios.post('/post/newpost', {
 			title: this.state.title,
+			imageURL: this.state.imageURL,
 			post: this.state.post
 		})
 			.then(response => {
@@ -55,6 +57,17 @@ class NewPost extends Component {
 							name="title"
 							placeholder="Post Title"
 							value={this.state.title}
+							onChange={this.handleChange}
+						/>
+					</div>
+					<br></br>
+					<div>
+						<input 
+							style={{fontSize: "60%"}}
+							placeholder="Image URL"
+							type="text"
+							name="imageURL"
+							value={this.state.imageURL}
 							onChange={this.handleChange}
 						/>
 					</div>
