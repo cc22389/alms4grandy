@@ -79,4 +79,37 @@ router.post('/newpost', (req, res) => {
     })
 })
 
+router.put('/editpost/:id', (req, res) => {
+    console.log('edit post');
+    Post.findByIdAndUpdate(req.params.id, {
+        title: req.body.title,
+        post: req.body.post
+    },
+        function (err, response) {
+            if (err) {
+                res.send(err);
+            } else {
+                console.log(response);
+                console.log('Post updated!');
+            }
+        }
+    )
+})
+
+router.delete('/deletepost/:id', (req, res) => {
+    console.log('delete post');
+    Post.findByIdAndDelete(req.params.id, {
+       
+    },
+        function (err, response) {
+            if (err) {
+                res.send(err);
+            } else {
+                console.log(response);
+                console.log('Post Deleted!');
+            }
+        }
+    )
+})
+
 module.exports = router

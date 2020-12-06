@@ -10,7 +10,7 @@ class LoginRouter extends Component {
     super()
     this.state = {
       loggedIn: false,
-      username: null
+      username: null,
     }
 
     this.getUser = this.getUser.bind(this)
