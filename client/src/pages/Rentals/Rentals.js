@@ -5,13 +5,12 @@ import "./Rentals.css";
 import party from "./birthdayParty.jpg";
 import field from "./field.jpg";
 import ballField from "./ballField.jpg"
+import Modal from "../../components/Modal/Modal"
 
 const Rentals = () => {
   return (
 
     <div className="container">
-      {/* <div className="row"> */}
-
       <div className="card bg-light mx-auto" style={{ width: "100%", height: "100%" }}>
         <div className="card-body" >
           <div className="row" style={{ verticalAlign: "middle" }}>
@@ -40,8 +39,8 @@ const Rentals = () => {
           </div>
         </div>
       </div>
-
-      {/* </div> */}
+      <br></br>
+      <Modal />
     </div>
 
   );
