@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "../../components/Carousel/Carousel"
 import stateMap from "./map_of_grandy_mn.jpg";
+import Modal from "../../components/Modal/Modal"
 import "./Home.css";
 
 
@@ -8,7 +9,6 @@ import "./Home.css";
 function Home() {
     return (
         <div>
-            <br></br>
             <div className="row rowclass">
                 <div className="col">
                     <h2>About us</h2>
@@ -26,6 +26,8 @@ function Home() {
                     <img className="state" src={stateMap} alt="state" />
                 </div>
             </div>
+            <br></br>
+            <Modal />
         </div>
     )
 }
