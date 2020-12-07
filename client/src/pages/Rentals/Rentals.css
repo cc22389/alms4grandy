@@ -5,6 +5,14 @@ h2 {
     color: rgb(45,49,66);
     display: block;
 }
+
+.rentalText {
+  font-size: "20px";
+  font-style: italic;
+  text-decoration: none;
+  font-size: 34px;
+  color: "#C8C8C8";
+}
     /* @media only screen and (max-width: 500px) {
         .row {
             flex-direction: column;
@@ -33,3 +41,4 @@ h2 {
       width: 100%;
     }
   }
+
