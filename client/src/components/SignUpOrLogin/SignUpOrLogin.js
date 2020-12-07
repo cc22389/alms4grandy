@@ -34,33 +34,24 @@ class SignUpOrLogin extends Component {
             <div>
                 {loggedIn ? (
                     <section>
-                        {/* <Link to="#" onClick={this.logout}>
-                            <span style={{color: "rgb(45,49,66)"}} >logout</span>
-                        </Link> */}
                         <button
-                                onClick={this.logout}
-                                type="submit"
-                                style={{background: "#fdd835", color: "rgb(45,49,66", padding:"5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "100%"}}
-                                ><strong>Logout</strong>
+                            onClick={this.logout}
+                            type="submit"
+                            style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "100%" }}
+                        ><strong>Logout</strong>
                         </button>
-                        
-
                     </section>
-                    
 
                 ) : (
-                    
+
                         <section>
                             <Link to="/loginpage">
-                                <div style={{color: "rgb(45,49,66)", fontSize: "100%"}}>Account Login</div>
+                                <div style={{ color: "rgb(45,49,66)", fontSize: "100%" }}>Administrator Login</div>
                             </Link>
                             <br></br>
-                            <Link to="/signuppage">
-                                <div style={{color: "rgb(45,49,66)", fontSize: "100%"}} >Create New Account</div>
-                            </Link>
                         </section>
                     )}
-                    <br></br>
+                <br></br>
             </div>
 
         );
