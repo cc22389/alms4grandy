@@ -4,7 +4,7 @@ import BallCalendly from "../../utils/BallCalendly.js";
 import "./Rentals.css";
 import party from "./birthdayParty.jpg";
 import field from "./field.jpg";
-import ballField from "./ballField.jpg"
+import ballField from "./ballField.jpg";
 import Modal from "../../components/Modal/Modal"
 
 const Rentals = () => {
@@ -15,8 +15,12 @@ const Rentals = () => {
         <div className="card-body" >
           <div className="row" style={{ verticalAlign: "middle" }}>
             <div className="col rentals" style={{ textAlign: "center", float: "left", width: "50%" }}>
-              <img className="picture" src={party} style={{ width: "100%", }} alt="party" />
-              <br /><br /><br /><br /><br /><br /><br /><br /><br />
+              
+              <img className="picture" src={party} style={{ width: "90%", }} alt="party" />
+              <br /><br /><br /><br />
+              <h3 className="rentalText" style={{color: "#A9A9A9"}}><strong>Pictured above:</strong></h3>
+              <div className="rentalText" style={{color: "#A9A9A9"}}><strong>Its a boy! Baby shower</strong></div>
+              <br /><br /><br />
             </div>
             <div className="col rentals">
               <CcCalendly className="CcCalendly" />
@@ -30,8 +34,8 @@ const Rentals = () => {
         <div className="card-body">
           <div className="row">
             <div className="col" style={{ textAlign: "center", float: "left", width: "50%" }}>
-              <img className="picture" src={ballField} style={{ width: "100%", margin: "auto" }} alt="field" /><br /><br />
-              <img className="picture" src={field} style={{ width: "100%", margin: "auto" }} alt="field" />
+              <img className="picture" src={ballField} style={{ width: "90%", margin: "auto" }} alt="field" /><br /><br />
+              <img className="picture" src={field} style={{ width: "90%", margin: "auto" }} alt="field" />
             </div>
             <div className="col">
               <BallCalendly />

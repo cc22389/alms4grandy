@@ -37,7 +37,7 @@ class SignUpOrLogin extends Component {
                         <button
                             onClick={this.logout}
                             type="submit"
-                            style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "100%" }}
+                            style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "70%" }}
                         ><strong>Logout</strong>
                         </button>
                     </section>
@@ -48,10 +48,10 @@ class SignUpOrLogin extends Component {
                             <Link to="/loginpage">
                                 <div style={{ color: "rgb(45,49,66)", fontSize: "100%" }}>Administrator Login</div>
                             </Link>
-                            <br></br>
                         </section>
                     )}
                 <br></br>
+
             </div>
 
         );

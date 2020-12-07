@@ -6,6 +6,7 @@ import NewPost from '../NewPost/NewPost'
 import SignUp from '../SignUp/SignUp';
 
 class LoginRouter extends Component {
+
   constructor() {
     super()
     this.state = {
@@ -47,6 +48,8 @@ class LoginRouter extends Component {
     })
   }
 
+  
+
   render() {
     return (
 
@@ -56,17 +59,20 @@ class LoginRouter extends Component {
           <i className='fas fa-user-alt' style={{ width: "100%", fontSize: "48px" }}></i>
           <br></br>
           <br></br>
+          <p style={{ color: "rgb(45,49,66" }}>Hello {this.state.username}</p>
           <SignUpOrLogin updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
           {/* greet user if logged in: */}
           {this.state.loggedIn &&
             <div>
-              <p style={{ color: "rgb(45,49,66" }}>Hey, {this.state.username}!</p>
+              {/* <p style={{ color: "rgb(45,49,66" }}>Hey, {this.state.username}!</p> */}
+              <hr style={{width: "70%", color: "#C8C8C8"}}></hr>
               <NewPost />
               <br></br>
-
+              <hr style={{width: "70%", color: "#C8C8C8"}}></hr>
               <div style={{ color: "rgb(45,49,66)", fontSize: "100%" }} >Create New Account<br/><br/>
               <SignUp />
               </div>
+              <br></br>
             </div>
 
           }

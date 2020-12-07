@@ -84,7 +84,7 @@ class SignUp extends Component {
 								// className="btn btn-primary col-1 col-mr-auto"
 								onClick={this.handleSubmit}
 								type="submit"
-								style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "60%" }}
+								style={{ background: "#fdd835", color: "rgb(45,49,66)", padding: "5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "70%" }}
 							><strong>Sign Up</strong>
 							</button>
 

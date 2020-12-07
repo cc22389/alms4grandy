@@ -16,7 +16,7 @@ function Footer() {
                     </h5>
                 </div>
                 <br></br>
-                <div className="col footer" style={{textAlign: "center"}}>
+                <div className="col footer" >
                     <h3>Media</h3>
                     <i  className="fab fa-facebook" style={{color: "white", width: "100%", fontSize: "36px"}} href="https://www.facebook.com/Grandy-Community-Center-986959121394278/" target="_blank" rel="noopener noreferrer"></i>
                 </div>
