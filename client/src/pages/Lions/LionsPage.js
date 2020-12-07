@@ -9,16 +9,14 @@ function LionsPage() {
             <div className="col" style={{ textAlign: "center", padding: "10px" }}>
                 <div className="card bg-light mx-auto" style={{ margin: "auto", width: "80%" }}>
                     <div className="card-body" style={{ height: "auto" }}>
-                        <div>
-                            <a href="https://www.lionsclubs.org/en/discover-our-clubs/mission-and-history" target="blank" style={{ color: "rgb(45,49,66)", textAlign: "center", textDecoration: "underline" }}><h1>Lions Clubs International:</h1></a><br/>
+                        <div className="calendlyCorrection">
+                            <a href="https://www.lionsclubs.org/en/discover-our-clubs/mission-and-history" target="blank" style={{ color: "rgb(45,49,66)", textAlign: "center", textDecoration: "underline" }}><h1>Lions Clubs International:</h1></a><br />
                             <p style={{ textAlign: "justify" }}>Lions serve. It’s that simple, and it has been since we first began in 1917. Our clubs are places where individuals join together to give their valuable time and effort to improving their communities, and the world.</p>
                             <p style={{ textAlign: "justify" }}>Our Mission is to empower volunteers to serve their communities, meet humanitarian needs, encourage peace and promote international understanding through Lions clubs.</p>
-                            <p style={{ textAlign: "justify" }}>Our vision is to be the global leader in community and humanitarian service.</p><br/><br/>
-                            <div>
-                                <a href="https://www.lionsclubs.org/en" target="blank" ><button style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "15px", border: "2px solid lightGray", borderRadius: "10px", width: "33.33%"}}>Learn More</button></a>
-                                <a href="https://www.lionsclubs.org/en/join/membership-form" target="blank"><button style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "15px", border: "2px solid lightGray", borderRadius: "10px", width: "33.33%" }}>Join</button></a>
-                                <a href="https://www.lionsclubs.org/en/donate" target="blank"><button style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "15px", border: "2px solid lightGray", borderRadius: "10px", width: "33.33%" }}>Donate</button></a>
-                            </div>
+                            <p style={{ textAlign: "justify" }}>Our vision is to be the global leader in community and humanitarian service.</p><br /><br />
+                            <a href="https://www.lionsclubs.org/en" target="blank" ><button style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "15px", border: "2px solid lightGray", borderRadius: "10px", width: "33.33%" }}>Learn More</button></a>
+                            <a href="https://www.lionsclubs.org/en/join/membership-form" target="blank"><button style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "15px", border: "2px solid lightGray", borderRadius: "10px", width: "33.33%" }}>Join</button></a>
+                            <a href="https://www.lionsclubs.org/en/donate" target="blank"><button style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "15px", border: "2px solid lightGray", borderRadius: "10px", width: "33.33%" }}>Donate</button></a>
                         </div>
                     </div>
                 </div>
@@ -32,7 +30,7 @@ function LionsPage() {
                             </div>
                             <br></br>
                             <br></br>
-                            <div>
+                            <div className="calendlyCorrection">
                                 <h1>Grandy Lions Club</h1>
                                 <hr style={{ width: "55%" }}></hr>
                                 <p>Box 30 </p>
@@ -50,7 +48,7 @@ function LionsPage() {
                             </div>
                             <br></br>
                             <br></br>
-                            <div>
+                            <div className="calendlyCorrection">
                                 <h1>Lions Club International</h1>
                                 <hr style={{ width: "70%" }}></hr>
                                 <p>300 W. 22nd Street</p>
