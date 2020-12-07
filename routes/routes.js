@@ -66,14 +66,18 @@ router.post('/logout', (req, res) => {
     }
 })
 
-router.get('/newpost', (req, res, next) => {
+router.get('/getpost', (req, res, next) => {
     console.log('===== post!!======')
-    console.log(req.post)
-    if (req.post) {
-        res.json({ post: req.post })
-    } else {
-        res.json({ post: null })
-    }
+    Post.find({}, 
+        function (err, response) {
+        if (err) {
+            res.send(err);
+        } else {
+            console.log(response);
+            console.log('Post updated!');
+            res.send(response)
+        }
+    })
 })
 
 router.post('/newpost', (req, res) => {
