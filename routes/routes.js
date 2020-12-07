@@ -66,6 +66,20 @@ router.post('/logout', (req, res) => {
     }
 })
 
+router.get('/getpost', (req, res, next) => {
+    console.log('===== post!!======')
+    Post.find({}, 
+        function (err, response) {
+        if (err) {
+            res.send(err);
+        } else {
+            console.log(response);
+            console.log('Post updated!');
+            res.send(response)
+        }
+    })
+})
+
 router.post('/newpost', (req, res) => {
     console.log('create post');
     const { title, imageURL, post } = req.body
