@@ -6,3 +6,8 @@
         word-break: break-all;
       }
    }
+
+   .quote {
+     font-size: 27px;
+     font-style: italic;
+   }

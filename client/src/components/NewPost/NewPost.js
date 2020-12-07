@@ -49,7 +49,8 @@ class NewPost extends Component {
 			<div>
 				<form >
 					<div>
-						<p>Make a Post</p>
+					<div style={{ color: "rgb(45,49,66)", fontSize: "100%" }} >Make a post</div>
+					<br></br>
 						<input
 							style={{fontSize: "60%"}}
 							type="text"
