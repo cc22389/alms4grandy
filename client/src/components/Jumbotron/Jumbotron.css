@@ -16,6 +16,7 @@ hr {
 
 p {
     font-size: 35px !important;
+    word-break: normal;
 }
 
 .display-4{

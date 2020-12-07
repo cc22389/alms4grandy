@@ -3,12 +3,9 @@ import Carousel from "../../components/Carousel/Carousel"
 import stateMap from "./map_of_grandy_mn.jpg";
 import "./Home.css";
 
-
-
 function Home() {
     return (
         <div>
-            <br></br>
             <div className="row rowclass">
                 <div className="col">
                     <h2>About us</h2>

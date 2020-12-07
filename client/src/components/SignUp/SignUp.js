@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
 import axios from 'axios'
 
 class SignUp extends Component {
@@ -8,7 +9,7 @@ class SignUp extends Component {
 			username: '',
 			password: '',
 			confirmPassword: '',
-
+			redirectTo: null
 		}
 		this.handleSubmit = this.handleSubmit.bind(this)
 		this.handleChange = this.handleChange.bind(this)
@@ -32,9 +33,11 @@ class SignUp extends Component {
 				console.log(response)
 				if (!response.data.errmsg) {
 					console.log('successful signup')
+					alert("Successful sign-up")
 					this.setState({ //redirect to login page
-						redirectTo: '/loginpage'
+						redirectTo: '/communitylanding'
 					})
+					window.location.reload();
 				} else {
 					console.log('username already taken')
 				}
@@ -47,46 +50,50 @@ class SignUp extends Component {
 
 
 	render() {
-		return (
-			<div>
-				<form >
-					<div>
-						<input
-							style={{fontSize: "60%", width: "70%"}}
-							type="text"
-							id="username"
-							name="username"
-							placeholder="Email or Username"
-							value={this.state.username}
-							onChange={this.handleChange}
-						/>
-					</div>
-					<br></br>
-					<div>
-						<input 
-							style={{fontSize: "60%", width: "70%"}}
-							placeholder="Password"
-							type="password"
-							name="password"
-							value={this.state.password}
-							onChange={this.handleChange}
-						/>
-					</div>
-					<br></br>
-					<div>
-						<button
-							// className="btn btn-primary col-1 col-mr-auto"
-							onClick={this.handleSubmit}
-							type="submit"
-							style={{background: "#fdd835", color: "rgb(45,49,66", padding:"5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "60%"}}
-                            ><strong>Sign Up</strong>
-						</button>
-						
-					</div>
-				</form>
-			</div>
+		if (this.state.redirectTo) {
+			return <Redirect to={{ pathname: this.state.redirectTo }} />
+		} else {
+			return (
+				<div>
+					<form >
+						<div>
+							<input
+								style={{ fontSize: "60%", width: "70%" }}
+								type="text"
+								id="username"
+								name="username"
+								placeholder="Email or Username"
+								value={this.state.username}
+								onChange={this.handleChange}
+							/>
+						</div>
+						<br></br>
+						<div>
+							<input
+								style={{ fontSize: "60%", width: "70%" }}
+								placeholder="Password"
+								type="password"
+								name="password"
+								value={this.state.password}
+								onChange={this.handleChange}
+							/>
+						</div>
+						<br></br>
+						<div>
+							<button
+								// className="btn btn-primary col-1 col-mr-auto"
+								onClick={this.handleSubmit}
+								type="submit"
+								style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "60%" }}
+							><strong>Sign Up</strong>
+							</button>
 
-		)
+						</div>
+					</form>
+				</div>
+
+			)
+		}
 	}
 }
 

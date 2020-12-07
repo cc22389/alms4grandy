@@ -68,15 +68,50 @@ router.post('/logout', (req, res) => {
 
 router.post('/newpost', (req, res) => {
     console.log('create post');
-    const { title, post } = req.body
+    const { title, imageURL, post } = req.body
     const newPost = new Post({
         title: title,
+        imageURL: imageURL,
         post: post
     })
     newPost.save((err, savedPost) => {
         if (err) return res.json(err)
         res.json(savedPost)
     })
+})
+
+router.put('/editpost/:id', (req, res) => {
+    console.log('edit post');
+    Post.findByIdAndUpdate(req.params.id, {
+        title: req.body.title,
+        imageURL: req.body.imageURL,
+        post: req.body.post
+    },
+        function (err, response) {
+            if (err) {
+                res.send(err);
+            } else {
+                console.log(response);
+                console.log('Post updated!');
+            }
+        }
+    )
+})
+
+router.delete('/deletepost/:id', (req, res) => {
+    console.log('delete post');
+    Post.findByIdAndDelete(req.params.id, {
+       
+    },
+        function (err, response) {
+            if (err) {
+                res.send(err);
+            } else {
+                console.log(response);
+                console.log('Post Deleted!');
+            }
+        }
+    )
 })
 
 module.exports = router

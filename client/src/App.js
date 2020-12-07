@@ -8,7 +8,6 @@ import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import CommunityLanding from "./pages/CommunityLanding/CommunityLanding";
 import LoginPage from "./pages/Login/LoginPage";
-import SignUpPage from "./pages/SignUp/SignUpPage";
 import lionsPage from "./pages/Lions/LionsPage";
 
 class App extends Component {
@@ -23,7 +22,6 @@ class App extends Component {
             <Route exact path="/rentals" component={Rentals} />
             <Route exact path="/communitylanding" component={CommunityLanding} />
             <Route exact path="/loginpage" component={LoginPage} />
-            <Route exact path="/signuppage" component={SignUpPage} />
             <Route exact path="/lions" component={lionsPage} />
           </Switch>
           <Footer />

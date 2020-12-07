@@ -11,6 +11,7 @@ import "./Carousel.css";
 
 function Carousel() {
     return (
+        <div className="calendlyCorrection">
         <div className="masterContainer">
             <div className="container">
                 <div className="carouselSize justify-content-center">
@@ -61,6 +62,7 @@ function Carousel() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

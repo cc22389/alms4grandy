@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
-//debug {authorize} to see if we need it below?
-import { authorize } from 'passport'
 import "./Login.css";
 
 class Login extends Component {
@@ -38,14 +36,11 @@ class Login extends Component {
                 console.log(response)
                 if (response.status === 200) {
                     // update App.js state
-                    this.props.updateUser({
-                        loggedIn: true,
-                        username: response.data.username
-                    })
-                    // update the state to redirect to home
                     this.setState({
-                        redirectTo: '/'
+                        username: response.data.username,
+                        redirectTo: '/communitylanding'
                     })
+                    window.location.reload(); 
                 }
             }).catch(error => {
                 console.log('login error: ')

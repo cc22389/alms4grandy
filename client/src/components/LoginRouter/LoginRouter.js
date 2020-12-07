@@ -3,13 +3,14 @@ import axios from 'axios'
 import SignUpOrLogin from '../SignUpOrLogin/SignUpOrLogin'
 import "./LoginRouter.css";
 import NewPost from '../NewPost/NewPost'
+import SignUp from '../SignUp/SignUp';
 
 class LoginRouter extends Component {
   constructor() {
     super()
     this.state = {
       loggedIn: false,
-      username: null
+      username: null,
     }
 
     this.getUser = this.getUser.bind(this)
@@ -49,20 +50,28 @@ class LoginRouter extends Component {
   render() {
     return (
 
-      <div className="card bg-light mx-auto" style={{ maxWidth: "25%", float: "center", margin: 0}}>
+      <div className="card bg-light mx-auto" style={{ maxWidth: "25%", float: "center", margin: 0 }}>
         <div className="card-body mx-auto">
           <br></br>
           <i className='fas fa-user-alt' style={{ width: "100%", fontSize: "48px" }}></i>
           <br></br>
           <br></br>
-            <SignUpOrLogin updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
-            {/* greet user if logged in: */}
-            {this.state.loggedIn &&
-              <p  style={{color: "rgb(45,49,66"}}>Hey, {this.state.username}!</p> &&
-              <NewPost/>
-            }
+          <SignUpOrLogin updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
+          {/* greet user if logged in: */}
+          {this.state.loggedIn &&
+            <div>
+              <p style={{ color: "rgb(45,49,66" }}>Hey, {this.state.username}!</p>
+              <NewPost />
+              <br></br>
+
+              <div style={{ color: "rgb(45,49,66)", fontSize: "100%" }} >Create New Account<br/><br/>
+              <SignUp />
+              </div>
+            </div>
+
+          }
         </div>
-      </div>
+      </div >
     );
   }
 }

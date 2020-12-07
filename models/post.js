@@ -4,11 +4,11 @@ mongoose.promise = Promise
 
 // Define userSchema
 const postSchema = new Schema({
-
 	title: { type: String, unique: false, required: false },
+	imageURL: { type: String, unique: false, required: false },
 	post: { type: String, unique: false, required: false }
 
-})
+}, { timestamps: true });
 
 // Define schema methods
 postSchema.methods = {
