@@ -66,6 +66,16 @@ router.post('/logout', (req, res) => {
     }
 })
 
+router.get('/newpost', (req, res, next) => {
+    console.log('===== post!!======')
+    console.log(req.post)
+    if (req.post) {
+        res.json({ post: req.post })
+    } else {
+        res.json({ post: null })
+    }
+})
+
 router.post('/newpost', (req, res) => {
     console.log('create post');
     const { title, post } = req.body
