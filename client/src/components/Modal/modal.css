@@ -22,9 +22,9 @@
 
   @media only screen and (max-width: 600px) {
    .mymodal {
-     height: 90%;
-     width: 60%;
      font-size: small;
      padding: 20px;
+     zoom: .95;
+     width: 95%;
     }
   }
