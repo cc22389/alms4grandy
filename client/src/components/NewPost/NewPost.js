@@ -33,6 +33,7 @@ class NewPost extends Component {
 				console.log(response)
 				if (!response.data.errmsg) {
 					console.log('successful post')
+					window.location.reload(); 
 				} else {
 					console.log('title already taken')
 				}
