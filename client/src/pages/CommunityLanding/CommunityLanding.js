@@ -1,16 +1,16 @@
 import React from "react";
-import BulletinBoard from "../../components/BulletinBoard/BulletinBoard";
 import LoginRouter from "../../components/LoginRouter/LoginRouter";
+import NoteCard from "../../components/NoteCard/NoteCard";
 
 function CommunityLanding() {
   return (
-    <div>
-      <h4 style={{ textAlign: "center", color: "rgb(45,49,66)" }}>
+    <div className="row">
+      <h4 className="col-4" style={{ textAlign: "center", color: "rgb(45,49,66)" }}>
         <LoginRouter />
       </h4>
-      <div style={{ textAlign: "center" }}>
+      <div className="col" style={{ textAlign: "center", marginRight: "8%"}}>
         {" "}
-        <BulletinBoard />
+        <NoteCard />
       </div>
     </div>
   );

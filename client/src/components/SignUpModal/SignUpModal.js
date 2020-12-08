@@ -15,7 +15,7 @@ export default function App() {
     return (
         <div className="all">
             <div style={{ textAlign: "center" }}>
-                <button style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "100%" }} onClick={toggleModal}>Create an Account</button>
+                <button style={{ background: "rgb(45,49,66)", color: "white", padding: "5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "80%" }} onClick={toggleModal}><strong>Create Account</strong></button>
             </div>
             <Modal
                 isOpen={isOpen}

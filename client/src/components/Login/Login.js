@@ -58,7 +58,7 @@ class Login extends Component {
                     <form >
                         <div >
                             <input
-                                style={{fontSize: "60%", width: "70%"}}
+                                style={{fontSize: "100%", width: "50%"}}
                                 type="text"
                                 id="username"
                                 name="username"
@@ -70,7 +70,7 @@ class Login extends Component {
                         <br></br>
                         <div>
                             <input
-                                style={{fontSize: "60%", width: "70%"}}
+                                style={{fontSize: "100%", width: "50%"}}
                                 placeholder="Password"
                                 type="password"
                                 name="password"
@@ -83,7 +83,7 @@ class Login extends Component {
                             <button
                                 onClick={this.handleSubmit}
                                 type="submit"
-                                style={{background: "#fdd835", color: "rgb(45,49,66", padding:"5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "60%"}}
+                                style={{background: "#fdd835", color: "rgb(45,49,66", padding:"5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "100%"}}
                                 ><strong>Login</strong>
                             </button>
                         </div>
