@@ -50,14 +50,19 @@ class NoteCard extends Component {
     render() {
 
         return (
-            <div className="card bg-light mx-auto" style={{ maxWidth: "25%", float: "center", margin: 0 }}>
+            <div className="card bg-light mx-auto" style={{ maxWidth: "100%", float: "center", margin: 0, }}>
+                <br></br>
+                <h2 style={{ textDecoration: "underline" }}>Community Bulletin Board</h2>
                 <div className="card-body mx-auto">
                     {this.state.posts.map(post => {
                         return (
                             <>
-                                <p>{post.title}</p>
-                                <img src={post.imageURL} />
-                                <p>{post.post}</p>
+                                <p style={{ textAlign: "center" }}><strong>{post.title}</strong></p>
+                                <img src={post.imageURL} style={{ maxWidth: "30%" }} alt="" />
+                                <p style={{fontStyle: "italic", marginTop: "3%"}}>"{post.post}"</p>
+                                <p>{post.createdDate}</p>
+                                <hr style={{ width: "80%", color: "#C8C8C8" }} />
+
                             </>
                         )
                     })}

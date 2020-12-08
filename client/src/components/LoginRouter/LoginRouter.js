@@ -53,7 +53,7 @@ class LoginRouter extends Component {
   render() {
     return (
 
-      <div className="card bg-light mx-auto" style={{ maxWidth: "25%", float: "center", margin: 0 }}>
+      <div className="card bg-light mx-auto" style={{ maxWidth: "50%", float: "center", margin: 0 }}>
         <div className="card-body mx-auto">
           <br></br>
           <i className='fas fa-user-alt' style={{ width: "100%", fontSize: "48px" }}></i>
