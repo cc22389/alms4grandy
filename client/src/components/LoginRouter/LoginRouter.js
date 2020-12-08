@@ -67,8 +67,10 @@ class LoginRouter extends Component {
               {/* <p style={{ color: "rgb(45,49,66" }}>Hey, {this.state.username}!</p> */}
               <hr style={{width: "70%", color: "#C8C8C8"}}></hr>
               <NewPost />
-              <br></br>
-              <SignUpModal />
+             
+              <hr style={{width: "70%", color: "#C8C8C8"}}></hr><br/>
+              
+              <SignUpModal /><br/>
              </div>
           }
         </div>
