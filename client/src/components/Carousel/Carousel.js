@@ -11,7 +11,7 @@ import "./Carousel.css";
 
 function Carousel() {
     return (
-        <div className="calendlyCorrection">
+        <div className="carouselCorrection">
         <div className="masterContainer">
             <div className="container">
                 <div className="carouselSize justify-content-center">
@@ -23,27 +23,18 @@ function Carousel() {
                             <div className="carousel-item">
                                 <img src={parking} className="d-block w-100" alt="View from parking lot"></img>
                             </div>
-                            {/* <div className="carousel-item">
-                                <img src={community} className="d-block w-100" alt="community"></img>
-                            </div> */}
                             <div className="carousel-item active">
                                 <img src={mainRoom} className="d-block w-100" alt="Main Room"></img>
                             </div>
                             <div className="carousel-item">
                                 <img src={lions} className="d-block w-100" alt="Main Room"></img>
                             </div>
-                            {/* <div className="carousel-item">
-                                <img src={party} className="d-block w-100" alt="party"></img>
-                            </div> */}
                             <div className="carousel-item">
                                 <img src={kitchen} className="d-block w-100" alt="kitchen"></img>
                             </div>
                             <div className="carousel-item">
                                 <img src={kitchen2} className="d-block w-100" alt="kitchen"></img>
                             </div>
-                            {/* <div className="carousel-item">
-                                <img src={volunteer} className="d-block w-100" alt="volunteer"></img>
-                            </div> */}
                             <div className="carousel-item">
                                 <img src={playground} className="d-block w-100" alt="playground"></img>
                             </div>

@@ -3,41 +3,42 @@
     background-image: url("./skyview.jpg");
     background-color: white;
     background-repeat: no-repeat;
-    background-size: 400px;
+    background-size: 23%;
     background-position: left center;
     color: rgb(45,49,66);
-    margin: 50px;
+    margin: 8%;
 }
 
 hr {
     border-top: 3px solid  !important;
-    width: 900px;
+    width: 60%;
 }
 
-p {
-    font-size: 35px !important;
-    word-break: normal;
-}
+/* .tag {
+    font-size: 200% !important;
+} */
+
+
 
 .display-4{
     font-weight: bold;
-
+    font-size: 300% !important;
 }
 
 @media only screen and (max-width: 600px) {
     .display-4 {
-        font-size: 45px;
+        font-size:135% !important;
         /* text-align: right; */
     }
-    p {
-        font-size: 35px;
+    .tag {
+        font-size: 100%;
         /* text-align: right; */
     }
-    hr {
+    /* hr {
         width: 200px;
     }
     .jumbotron {
         margin: 25px;
-    }
+    } */
     
 }

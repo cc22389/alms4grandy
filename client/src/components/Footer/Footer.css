@@ -7,7 +7,6 @@ footer {
     height: auto;
     color: white;
     margin-top: 80px;
-    /* position: absolute; */
 }
 
 .footer {
@@ -35,33 +34,16 @@ h5:hover a:hover{
 
 }
 
-/* .linkies {
-    color: white
-}
-
-.linkies:hover {
-    color: #fdd835
-} */
-/* .fa-facebook{
-    background: #3B5998;
-} */
 
 .fab:hover {
     opacity: 0.7;
     color: white !important;
     text-decoration-line: none;
-  }
+}
 
-  /* .fa {
-    padding: 20px;
-    font-size: 20px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-  } */
 
-  .fa {
+
+.fa {
     padding: 12px;
     font-size: 30px;
     width: 50px;
@@ -69,7 +51,29 @@ h5:hover a:hover{
     text-align: center;
     text-decoration: none;
     border-radius: 15%;
-  }
+}
+
+  
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1201px) {
+
+}
 
   
 
@@ -91,5 +95,7 @@ h5:hover a:hover{
     h3 {
         font-weight: bold;
     }
-    
+    .fab {
+        text-align: center;
+    }
 }
