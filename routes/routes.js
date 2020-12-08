@@ -57,6 +57,16 @@ router.get('/', (req, res, next) => {
     }
 })
 
+router.get('/getthepost', (req, res, next) => {
+    console.log('===== user!!======')
+    console.log(req.post)
+    if (req.post) {
+        res.json({ post: req.post })
+    } else {
+        res.json({ post: null })
+    }
+})
+
 router.post('/logout', (req, res) => {
     if (req.user) {
         req.logout()

@@ -9,8 +9,9 @@ class EditAndDeletePost extends Component {
             post: '',
 
         }
-        this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
+        this.Edit = this.Edit.bind(this)
+        this.Delete = this.Delete.bind(this)
     }
     handleChange(event) {
         this.setState({
@@ -24,6 +25,7 @@ class EditAndDeletePost extends Component {
         event.preventDefault()
         axios.put('/post/editpost/:id', {
             title: this.state.title,
+            imageURL: this.state.imageURL,
             post: this.state.post
         })
             .then(response => {

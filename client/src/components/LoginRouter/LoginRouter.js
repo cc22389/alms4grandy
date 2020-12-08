@@ -3,7 +3,7 @@ import axios from 'axios'
 import SignUpOrLogin from '../SignUpOrLogin/SignUpOrLogin'
 import "./LoginRouter.css";
 import NewPost from '../NewPost/NewPost'
-import SignUp from '../SignUp/SignUp';
+import SignUpModal from '../SignUpModal/SignUpModal';
 
 class LoginRouter extends Component {
 
@@ -68,13 +68,8 @@ class LoginRouter extends Component {
               <hr style={{width: "70%", color: "#C8C8C8"}}></hr>
               <NewPost />
               <br></br>
-              <hr style={{width: "70%", color: "#C8C8C8"}}></hr>
-              <div style={{ color: "rgb(45,49,66)", fontSize: "100%" }} >Create New Account<br/><br/>
-              <SignUp />
-              </div>
-              <br></br>
-            </div>
-
+              <SignUpModal />
+             </div>
           }
         </div>
       </div >
