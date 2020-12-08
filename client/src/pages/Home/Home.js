@@ -10,6 +10,7 @@ function home() {
                 <div className="col">
                     <h2 className="AboutUs">About us</h2>
                     <ul className="hometext">Grandy Community Center has been around for 20+ years. It houses the Grandy Lions for their pancake breakfasts' and monthly meetings.</ul>
+                    
                     <Carousel />
                 </div>
                 <div className="col">

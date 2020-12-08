@@ -10,16 +10,20 @@ h2 {
     color: rgb(45,49,66);
     margin-left: 4%;
     margin-right: 4%;
-    font-size: 130% !important;
+    font-size: 125% !important;
     margin-top: 20px;
     display: block;
 }
 
 .state {
-    width: 30%;
+    width: 25%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+.AboutUs, .OurHistory {
+    padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 600px) {
