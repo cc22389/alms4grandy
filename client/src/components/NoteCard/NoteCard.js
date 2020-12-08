@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 class NoteCard extends Component {
-	constructor() {
+    constructor() {
         super()
         const posts = []
-		this.state = { posts }
-        
+        this.state = { posts }
+
         this.getPost = this.getPost.bind(this)
         this.componentDidMount = this.componentDidMount.bind(this)
         this.componentDidUpdate = this.componentDidUpdate.bind(this)
@@ -16,11 +16,11 @@ class NoteCard extends Component {
     componentDidMount() {
         this.getPost()
     }
-    componentDidUpdate(prevProps){
+    componentDidUpdate(prevProps) {
         if (this.props.userID !== prevProps.userID) {
             this.getPost()
         }
-        
+
     }
 
     updatePost(postObject) {
@@ -31,11 +31,11 @@ class NoteCard extends Component {
         axios.get('/post/getpost').then(response => {
             console.log('Get post response: ')
             console.log(response.data)
-            if(response.data) {
+            if (response.data) {
                 console.log('Get Post: posts saved here')
 
                 this.setState({
-                posts: response.data
+                    posts: response.data
                 })
             } else {
                 console.log('Get posts: no posts');
@@ -48,19 +48,19 @@ class NoteCard extends Component {
     }
 
     render() {
-        
-        return(
-            <div className="card bg-light mx-auto" style={{ maxWidth: "25%", float: "center", margin: 0}}>
+
+        return (
+            <div className="card bg-light mx-auto" style={{ maxWidth: "25%", float: "center", margin: 0 }}>
                 <div className="card-body mx-auto">
-{this.state.posts.map(post => {
-    return(
-        <>
-<p>{post.title}</p>
-<img src={post.imageURL}/>
-<p>{post.post}</p>
-</>
-    )
-})}
+                    {this.state.posts.map(post => {
+                        return (
+                            <>
+                                <p>{post.title}</p>
+                                <img src={post.imageURL} />
+                                <p>{post.post}</p>
+                            </>
+                        )
+                    })}
 
                 </div>
             </div>

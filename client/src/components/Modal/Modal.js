@@ -25,7 +25,7 @@ export default function App() {
                 overlayClassName="myoverlay"
                 closeTimeoutMS={500}
             >
-                <div style={{ textAlign: "center" }}>
+                <div style={{ textAlign: "center"}}>
                     <p className="mo" style={{ fontWeight: "bold", textDecoration: "underline" }}>DO NOT ENTER ANY PAYMENT INFORMATION!</p>
                     <p>This is a mock website created by students for a project.</p>
                     <p>To learn more about these students, click <a href="https://github.com/cc22389/alms4grandy" target="blank" ><button style={{ background: "rgb(45,49,66)", color: "white", padding: "10px", border: "2px solid lightGray", borderRadius: "10px", fontSize: "85%" }}> here </button></a> and see the contributors section.</p><br />
