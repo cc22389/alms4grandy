@@ -58,7 +58,7 @@ class SignUp extends Component {
 					<form >
 						<div>
 							<input
-								style={{ fontSize: "60%", width: "70%" }}
+								style={{ fontSize: "60%", width: "80%", border: "solid 1px #C8C8C8" }}
 								type="text"
 								id="username"
 								name="username"
@@ -70,7 +70,7 @@ class SignUp extends Component {
 						<br></br>
 						<div>
 							<input
-								style={{ fontSize: "60%", width: "70%" }}
+								style={{ fontSize: "60%", width: "80%", border: "solid 1px #C8C8C8" }}
 								placeholder="Password"
 								type="password"
 								name="password"
@@ -84,7 +84,7 @@ class SignUp extends Component {
 								// className="btn btn-primary col-1 col-mr-auto"
 								onClick={this.handleSubmit}
 								type="submit"
-								style={{ background: "#fdd835", color: "rgb(45,49,66)", padding: "5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "70%" }}
+								style={{ background: "#fdd835", color: "rgb(45,49,66)", padding: "5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "50%" }}
 							><strong>Sign Up</strong>
 							</button>
 
