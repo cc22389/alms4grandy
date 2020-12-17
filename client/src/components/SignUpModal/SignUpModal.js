@@ -26,9 +26,11 @@ export default function App() {
                 closeTimeoutMS={500}
                 style={{ zoom: 5 }}
             >
+                <h2>Create Account</h2>
+                <br></br>
                 <div style={{ textAlign: "center", zoom: 2 }}>
                     <SignUp/><br/>
-                    <button style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "80%" }} onClick={toggleModal}>Close</button>
+                    <button style={{ background: "#fdd835", color: "rgb(45,49,66", padding: "5px 5px", border: "#fdd835", borderRadius: "4px", fontSize: "50%", width: "30%" }} onClick={toggleModal}><strong>Close</strong></button>
                 </div>
             </Modal>
         </div>
