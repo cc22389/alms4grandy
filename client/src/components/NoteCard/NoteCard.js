@@ -54,7 +54,7 @@ class NoteCard extends Component {
                 <br></br>
                 <h2 style={{ textDecoration: "underline" }}>Community Bulletin Board</h2>
                 <div className="card-body mx-auto">
-                    {this.state.posts.map(post => {
+                    {this.state.posts.slice(0).reverse().map(post => {
                         return (
                             <>
                                 <p style={{ textAlign: "center" }}><strong>{post.title}</strong></p>
